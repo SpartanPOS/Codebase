@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#root {
+    display: grid;
+    background-color: #f0f0f0;
+    height: 100vh;
+    width: 100vw;
+    max-height: 100vh;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 0.5fr;
+
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+#title {
+    font-size: 3em;
+    margin: 0;
+    grid-row: 1;
+    grid-column: 2/ 3;
+}
+#store-logo {
+    grid-row: 2;
+    grid-column: 1.5 / 2;
+    background-image: url("https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#formDiv {
+    grid-row: 2;
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+#pin-keys {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(5, 50px);
+    grid-gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+#errField {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: red;
+}
+
+.hide {
+    display: none;
+}
+
+#chars {
+    grid-column: 1 / 4;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.pin-key {
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    font-size: 1.5em;
+    min-width: none;
+    min-height: none;
+}
+#toolbar {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 100px;
+    width: 100px;
+    background-color: #00000000;
+    border-top-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#toolbar-content {
+    flex-direction: column;
+    align-items: center;
+}
+#pullout-arrow {
+    content: "←";
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    cursor: pointer;
+}
