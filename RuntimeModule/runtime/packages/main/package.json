@@ -1,0 +1,10 @@
+{
+    "name": "main",
+    "spartanPOS": {
+        "viewExports": [{
+            "name": "dashboard",
+            "fullPath": "/src/index"
+        }]
+            
+    }
+}
